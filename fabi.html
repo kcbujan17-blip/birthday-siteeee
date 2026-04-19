@@ -1,0 +1,24 @@
+<p>&lt;!DOCTYPE html&gt;<br />&lt;html lang="en"&gt;<br />&lt;head&gt;<br />&lt;meta charset="UTF-8"&gt;<br />&lt;title&gt;Happy Birthday Lintu 🪄&lt;/title&gt;</p>
+<p>&lt;!-- Magical Font --&gt;<br />&lt;link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&amp;display=swap" rel="stylesheet"&gt;</p>
+<p>&lt;style&gt;<br />body {<br /> margin: 0;<br /> padding: 0;<br /> background: black;<br /> color: gold;<br /> font-family: 'Cinzel', serif;<br /> text-align: center;<br /> overflow: hidden;<br />}</p>
+<p>/* Stars background */<br />.stars {<br /> position: fixed;<br /> width: 100%;<br /> height: 100%;<br /> background: url("https://www.transparenttextures.com/patterns/stardust.png");<br /> animation: moveStars 60s linear infinite;<br />}</p>
+<p>@keyframes moveStars {<br /> from {background-position: 0 0;}<br /> to {background-position: 1000px 1000px;}<br />}</p>
+<p>/* Main box */<br />.container {<br /> position: relative;<br /> top: 15%;<br /> z-index: 2;<br />}</p>
+<p>h1 {<br /> font-size: 40px;<br /> text-shadow: 0 0 20px gold;<br />}</p>
+<p>p {<br /> font-size: 18px;<br /> margin: 20px;<br />}</p>
+<p>/* Floating candles */<br />.candle {<br /> position: absolute;<br /> width: 10px;<br /> height: 40px;<br /> background: white;<br /> border-radius: 5px;<br /> animation: float 5s ease-in-out infinite;<br />}</p>
+<p>@keyframes float {<br /> 0%,100% { transform: translateY(0); }<br /> 50% { transform: translateY(-30px); }<br />}</p>
+<p>/* Button */<br />button {<br /> background: gold;<br /> border: none;<br /> padding: 15px 25px;<br /> font-size: 18px;<br /> border-radius: 10px;<br /> cursor: pointer;<br /> box-shadow: 0 0 10px gold;<br />}</p>
+<p>button:hover {<br /> background: orange;<br />}</p>
+<p>/* Magic text */<br />.magic {<br /> display: none;<br /> font-size: 22px;<br /> margin-top: 20px;<br /> animation: glow 2s infinite alternate;<br />}</p>
+<p>@keyframes glow {<br /> from { text-shadow: 0 0 10px gold; }<br /> to { text-shadow: 0 0 25px white; }<br />}<br />&lt;/style&gt;<br />&lt;/head&gt;</p>
+<p>&lt;body&gt;</p>
+<p>&lt;div class="stars"&gt;&lt;/div&gt;</p>
+<p>&lt;!-- Floating candles --&gt;<br />&lt;div class="candle" style="left:10%; top:20%;"&gt;&lt;/div&gt;<br />&lt;div class="candle" style="left:30%; top:10%;"&gt;&lt;/div&gt;<br />&lt;div class="candle" style="left:70%; top:25%;"&gt;&lt;/div&gt;<br />&lt;div class="candle" style="left:90%; top:15%;"&gt;&lt;/div&gt;</p>
+<p>&lt;div class="container"&gt;<br /> &lt;h1&gt;🎂 Happy Birthday Lintu 🪄&lt;/h1&gt;</p>
+<p>&lt;p&gt;<br /> Dear Lintu,&lt;br&gt;&lt;br&gt;<br /> You are more magical than Hogwarts itself ✨&lt;br&gt;<br /> May your life be filled with spells of happiness,&lt;br&gt;<br /> potions of love, and endless adventures 💫<br /> &lt;/p&gt;</p>
+<p>&lt;button onclick="showMagic()"&gt;Cast Spell ✨&lt;/button&gt;</p>
+<p>&lt;div class="magic" id="magicText"&gt;<br /> ⚡ "Happiness can be found even in the darkest of times,<br /> if one only remembers to turn on the light." ⚡&lt;br&gt;&lt;br&gt;</p>
+<p>I solemnly swear that you are the BEST friend ever 💛<br /> &lt;/div&gt;<br />&lt;/div&gt;</p>
+<p>&lt;script&gt;<br />function showMagic() {<br /> document.getElementById("magicText").style.display = "block";<br />}<br />&lt;/script&gt;</p>
+<p>&lt;/body&gt;<br />&lt;/html&gt;</p>
